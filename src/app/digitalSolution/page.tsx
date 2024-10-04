@@ -7,7 +7,7 @@ import {ListComp} from '../ui/ListComp';
 import {PhotoImageCard} from '../ui/Cards/PhotoImageCard';
 
 const PhotoCard = ({file}: {file: filesProps}) => {
-	const arrayList: ListProps[] = file.position as ListProps[];
+	const arrayList: ListProps[] = file?.position as ListProps[];
 	return (
 		<>
 			<PhotoImageCard
@@ -22,7 +22,7 @@ const PhotoCard = ({file}: {file: filesProps}) => {
 					</h3>
 					<ul className="my-5 px-7">
 						{arrayList &&
-							arrayList.map((e: any, i: number) => (
+							arrayList?.map((e: any, i: number) => (
 								<ListComp
 									key={i}
 									description={e.description}

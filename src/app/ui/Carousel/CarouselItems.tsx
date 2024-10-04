@@ -1,6 +1,6 @@
 'use client';
 
-import {ItemProps} from '@/app/lib/definitions';
+import {ItemProps, ListProps} from '@/app/lib/definitions';
 import Image from 'next/image';
 import {ListComp} from '../ListComp';
 import clsx from 'clsx';
@@ -20,6 +20,7 @@ function ItemsList({
 	className?: string;
 	children?: React.ReactNode;
 }) {
+	const arrayList: ListProps[] = formList?.listing as ListProps[];
 	return (
 		<>
 			<div
@@ -38,9 +39,9 @@ function ItemsList({
 							{formList?.subText}
 						</h4>
 					)}
-					{formList?.listing && (
+					{arrayList && (
 						<ul className="p-5 text-TColor-50/75">
-							{formList?.listing.map((_: any, i: number) => (
+							{arrayList.map((_: any, i: number) => (
 								<ListComp key={i} description={_.description} />
 							))}
 						</ul>
