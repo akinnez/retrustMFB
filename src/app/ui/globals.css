@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Gilroy-ExtraBold';
+	src: url('../../../public/fonts/Gilroy-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('../../../public/fonts/Gilroy-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy-SemiBold';
+	src: url('../../../public/fonts/Gilroy-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Gilroy-Medium', Arial, Helvetica, sans-serif;
+	list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Gilroy-ExtraBold';
+}
+h4,
+h5,
+h6 {
+	font-family: 'Gilroy-SemiBold';
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}

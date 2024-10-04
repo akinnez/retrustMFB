@@ -1,101 +1,93 @@
-import Image from "next/image";
+import Image from 'next/image';
+import AccountOpeningCard from './ui/Cards/AccountOpeningCard';
+import ATMCardUseCard from './ui/Cards/ATMCardUseCard';
+import BudgetCard from './ui/Cards/BudgetCard';
+import HomePageBannerCard from './ui/Cards/HomePageBannerCard';
+import InstantLoanCard from './ui/Cards/InstantLoanCard';
+import JoinUsCard from './ui/Cards/JoinUsCard';
+import Card from './ui/Card';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+	return (
+		<>
+			<div className="md:px-10 xl:px-28 lg:py-10 bg-bg-100/25">
+				<HomePageBannerCard />
+				<div className="lg:flex justify-between items-center my-10">
+					<div className="lg:grid lg:grid-cols-2 gap-20">
+						<div className="my-10 lg:my-0">
+							<h5 className="text-TColor-50/50 my-5 text-center lg:text-left">
+								FULLY LICENSED BY
+							</h5>
+							<div className="flex gap-x-3 justify-center items-center">
+								<Image
+									src={'/images/cbn.svg'}
+									alt="not-found"
+									width={23}
+									height={31}
+								/>
+								<h5 className=" text-lg">
+									Central Bank of Nigeria
+								</h5>
+							</div>
+						</div>
+						<div className="my-10 lg:my-0">
+							<h5 className="text-TColor-50/50 my-5 text-center lg:text-left">
+								DEPOSITS INSURED BY
+							</h5>
+							<div className="flex justify-center lg:justify-normal">
+								<Image
+									src={'/images/ndic.svg'}
+									alt="not-found"
+									width={81}
+									height={31}
+								/>
+							</div>
+						</div>
+					</div>
+					<div className="px-3 lg:px-0 w-full lg:w-2/5 my-10 lg:my-0">
+						<Card className="flex items-center gap-3 px-3 py-4  border border-TColor-50/50 shadow-none ">
+							<Image
+								src={'/images/qrcode.svg'}
+								alt="not-found"
+								width={47}
+								height={47}
+							/>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+							<div className="">
+								Scan the QR code with your phone camera to
+								download the Retrust app.
+							</div>
+						</Card>
+					</div>
+				</div>
+			</div>
+
+			<div className="px-3 md:px-10 xl:px-28 py-5 md:py-10 bg-TColor-400">
+				<div className="lg:grid grid-cols-3 gap-10 py-10">
+					<div className="col-span-2 text-center lg:text-left">
+						<h2 className={'text-2xl lg:text-4xl'}>
+							Building the tracks of digital finance.
+						</h2>
+						<h4 className="mt-5 text-TColor-50/75 leading-7 my-7">
+							Retrust Microfinance Bank stands out for its
+							customer-centric approach, innovative solutions, and
+							commitment to creating positive social and economic
+							impacts. We believe in fostering trust, driving
+							growth, and empowering communities to achieve their
+							full potential.
+						</h4>
+					</div>
+				</div>
+				<AccountOpeningCard />
+				<div className="my-10 lg:grid grid-cols-2 gap-x-20">
+					<BudgetCard />
+					<ATMCardUseCard />
+				</div>
+				<InstantLoanCard />
+			</div>
+			<div>
+				<JoinUsCard />
+			</div>
+		</>
+	);
 }
