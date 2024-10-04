@@ -67,7 +67,10 @@ export const footerList = [
 		list: [
 			'09012345678',
 			'info@Retrustmfb.com',
-			<div className="flex gap-x-5 lg:gap-x-2 justify-center">
+			<div
+				key={'contactUs'}
+				className="flex gap-x-5 lg:gap-x-2 justify-center"
+			>
 				{social.map((e, i) => (
 					<Avatar key={i} className="bg-TColor-100">
 						{e}

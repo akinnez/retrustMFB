@@ -17,7 +17,9 @@ const PhotoCard = ({file}: {file: filesProps}) => {
 					<p className={`font-semibold text-TColor-150 text-lg`}>
 						{file.name || ''}
 					</p>
-					<p className="mt-5">{file?.position || 'Director'}</p>
+					<p className="mt-5">
+						{(file?.position as string) || 'Director'}
+					</p>
 				</div>
 			</PhotoImageCard>
 		</>

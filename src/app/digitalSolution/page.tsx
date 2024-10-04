@@ -1,12 +1,13 @@
 'use client';
 
-import {filesProps} from '../lib/definitions';
+import {filesProps, ListProps} from '../lib/definitions';
 import {digitalFiles} from '../lib/placeholder-data';
 import PageCard from '../ui/Cards/PageCard';
 import {ListComp} from '../ui/ListComp';
 import {PhotoImageCard} from '../ui/Cards/PhotoImageCard';
 
 const PhotoCard = ({file}: {file: filesProps}) => {
+	const arrayList: ListProps[] = file.position as ListProps[];
 	return (
 		<>
 			<PhotoImageCard
@@ -20,8 +21,8 @@ const PhotoCard = ({file}: {file: filesProps}) => {
 						{file.name || ''}
 					</h3>
 					<ul className="my-5 px-7">
-						{file?.position &&
-							file?.position.map((e: any, i: number) => (
+						{arrayList &&
+							arrayList.map((e: any, i: number) => (
 								<ListComp
 									key={i}
 									description={e.description}

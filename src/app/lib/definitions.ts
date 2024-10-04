@@ -2,7 +2,7 @@ export type filesProps = {
 	url: string;
 	name: string;
 	height: number;
-	position?: string | ListProps[] | any;
+	position?: string | ListProps[];
 	width: number;
 	imageStype?: string;
 };
@@ -19,5 +19,5 @@ export type ItemProps = {
 	width?: number;
 	subText?: string;
 	style?: string;
-	listing?: ListProps[] | any;
+	listing?: ListProps[];
 };
