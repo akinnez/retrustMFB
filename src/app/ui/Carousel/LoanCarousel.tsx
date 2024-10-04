@@ -8,11 +8,26 @@ function LoanCarousel() {
 		<>
 			<CarouselComp
 				NodeArray={[
-					<ItemsList formList={loanList[0]} />,
-					<ItemsList formList={loanList[1]} />,
-					<ItemsList formList={loanList[2]} />,
-					<ItemsList formList={loanList[3]} />,
-					<ItemsList formList={loanList[4]} />,
+					<ItemsList
+						key={loanList[0].label}
+						formList={loanList[0]}
+					/>,
+					<ItemsList
+						key={loanList[1].label}
+						formList={loanList[1]}
+					/>,
+					<ItemsList
+						key={loanList[2].label}
+						formList={loanList[2]}
+					/>,
+					<ItemsList
+						key={loanList[3].label}
+						formList={loanList[3]}
+					/>,
+					<ItemsList
+						key={loanList[4].label}
+						formList={loanList[4]}
+					/>,
 				]}
 			/>
 		</>

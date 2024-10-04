@@ -9,9 +9,18 @@ function Carousel() {
 		<>
 			<CarouselComp
 				NodeArray={[
-					<ItemsList formList={formList[0]} />,
-					<ItemsList formList={formList[1]} />,
-					<ItemsList formList={formList[2]} />,
+					<ItemsList
+						key={formList[0].label}
+						formList={formList[0]}
+					/>,
+					<ItemsList
+						key={formList[1].label}
+						formList={formList[1]}
+					/>,
+					<ItemsList
+						key={formList[2].label}
+						formList={formList[2]}
+					/>,
 				]}
 			/>
 		</>

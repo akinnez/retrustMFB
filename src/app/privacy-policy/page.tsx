@@ -29,7 +29,7 @@ function PrivacyPage() {
 			<div className="px-3 md:px-10 xl:px-28 py-5 md:py-10 xl:py-20">
 				<p>
 					At Retrust Microfinance Bank Limited, we are committed to
-					safeguarding the privacy and security of our customers'
+					safeguarding the privacy and security of our customers&#39;
 					personal information. This Privacy Policy explains how we
 					collect, use, share, and protect your information when you
 					use our services, access our website, or interact with our
@@ -87,12 +87,12 @@ function PrivacyPage() {
 						<p className="my-5">
 							While we strive to protect your personal
 							information, we cannot guarantee absolute security
-							arising from our customer’s interaction with all of
-							our digital platforms. We encourage you to safeguard
-							your account information and not share any sensitive
-							bank information and/or data to anyone. Notify us
-							immediately if you suspect any unauthorized
-							activity.
+							arising from our customer&#39;s interaction with all
+							of our digital platforms. We encourage you to
+							safeguard your account information and not share any
+							sensitive bank information and/or data to anyone.
+							Notify us immediately if you suspect any
+							unauthorized activity.
 						</p>
 					</div>
 					<h4>5. Data Retention</h4>
@@ -125,7 +125,7 @@ function PrivacyPage() {
 						services. We encourage you to review their privacy
 						policies before providing any personal information.
 					</p>
-					<h4>8. Children’s Privacy</h4>
+					<h4>8. Children&#39;s Privacy</h4>
 					<p className="my-5">
 						Our services are not intended for individuals under the
 						age of 18. We do not knowingly collect or process

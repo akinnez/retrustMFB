@@ -4,7 +4,7 @@ export const Avatar = ({
 	children,
 	className,
 }: {
-	children: any;
+	children: React.ReactNode;
 	className: string;
 }) => {
 	return (

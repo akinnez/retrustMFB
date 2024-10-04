@@ -7,38 +7,60 @@ import Youtube from '../Icons/Youtube';
 import Image from 'next/image';
 
 export const social: React.ReactNode[] = [
-	<Whatsapp styles="h-6 w-6" />,
+	<Whatsapp styles="h-6 w-6" key={'whatsapp'} />,
 	<Image
+		key={'instagram'}
 		src={'/images/instagram.svg'}
 		alt="notfound"
 		width={19}
 		height={19}
 	/>,
-	<TwitterX styles="h-6 w-6" />,
-	<Youtube styles="h-6 w-6 fill-TColor-150" />,
+	<TwitterX styles="h-6 w-6" key={'X'} />,
+	<Youtube styles="h-6 w-6 fill-TColor-150" key={'Youtube'} />,
 ];
 
 export const footerList = [
 	{
 		label: 'About',
 		list: [
-			<Link href="/about">About</Link>,
-			<Link href="/team">Our Team</Link>,
-			<Link href="#">Newsroom</Link>,
+			<Link href="/about" key={'about'}>
+				About
+			</Link>,
+			<Link href="/team" key={'team'}>
+				Our Team
+			</Link>,
+			<Link href="#" key={'news'}>
+				Newsroom
+			</Link>,
 		],
 	},
 	{
 		label: 'Security',
 		list: [
-			<Link href="/privacy-policy">Privacy Policy</Link>,
-			<Link href="#">Cookies Policy</Link>,
-			<Link href="#">Security Policy</Link>,
-			<Link href="/term-of-use">Terms of Use</Link>,
+			<Link href="/privacy-policy" key={'privacy'}>
+				Privacy Policy
+			</Link>,
+			<Link href="#" key={'cookies'}>
+				Cookies Policy
+			</Link>,
+			<Link href="#" key={'security'}>
+				Security Policy
+			</Link>,
+			<Link href="/term-of-use" key={'TOU'}>
+				Terms of Use
+			</Link>,
 		],
 	},
 	{
 		label: 'Help',
-		list: [<Link href="#">Learn</Link>, <Link href="#">Newsroom</Link>],
+		list: [
+			<Link href="#" key={'learn'}>
+				Learn
+			</Link>,
+			<Link href="#" key={'newsroom'}>
+				Newsroom
+			</Link>,
+		],
 	},
 	{
 		label: 'Contact',

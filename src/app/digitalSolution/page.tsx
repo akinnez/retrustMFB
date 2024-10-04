@@ -6,7 +6,7 @@ import PageCard from '../ui/Cards/PageCard';
 import {ListComp} from '../ui/ListComp';
 import {PhotoImageCard} from '../ui/Cards/PhotoImageCard';
 
-const PhotoCard = ({file}: {file: filesProps | any}) => {
+const PhotoCard = ({file}: {file: filesProps}) => {
 	return (
 		<>
 			<PhotoImageCard

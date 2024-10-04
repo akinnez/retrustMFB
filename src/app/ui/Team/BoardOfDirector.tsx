@@ -2,9 +2,10 @@
 
 import {bodFiles} from '@/app/lib/placeholder-data';
 import {PhotoImageCard} from '../Cards/PhotoImageCard';
+import {filesProps} from '@/app/lib/definitions';
 
 // Make a new component
-const PhotoCard = ({file}: {file: any}) => {
+const PhotoCard = ({file}: {file: filesProps}) => {
 	return (
 		<>
 			<PhotoImageCard

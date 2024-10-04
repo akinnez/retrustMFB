@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import {footerList} from './FooterDocs';
 import {FooterListComp} from './FooterListComp';
-import {Copy} from 'lucide-react';
 import Link from 'next/link';
 
 function FooterList() {
