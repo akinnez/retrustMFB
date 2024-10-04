@@ -41,6 +41,7 @@ function ItemsList({
 					)}
 					{arrayList && (
 						<ul className="p-5 text-TColor-50/75">
+							{/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
 							{arrayList.map((_: any, i: number) => (
 								<ListComp key={i} description={_.description} />
 							))}

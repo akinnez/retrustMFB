@@ -22,6 +22,7 @@ const PhotoCard = ({file}: {file: filesProps}) => {
 					</h3>
 					<ul className="my-5 px-7">
 						{arrayList &&
+							// eslint-disable-next-line @typescript-eslint/no-explicit-any
 							arrayList?.map((e: any, i: number) => (
 								<ListComp
 									key={i}
