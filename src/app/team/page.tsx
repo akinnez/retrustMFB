@@ -1,15 +1,15 @@
 'use client';
 
-import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs';
+// import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs';
 import PageCard from '@/app/ui/Cards/PageCard';
 import dynamic from 'next/dynamic';
 
 const BoardOfDirector = dynamic(() => import('@/app/ui/Team/BoardOfDirector'), {
 	ssr: false,
 });
-const Management = dynamic(() => import('@/app/ui/Team/Management'), {
-	ssr: false,
-});
+// const Management = dynamic(() => import('@/app/ui/Team/Management'), {
+// 	ssr: false,
+// });
 
 function Team() {
 	return (
@@ -30,7 +30,8 @@ function Team() {
 			</PageCard>
 
 			<div className="px-3 md:px-10 xl:px-28 py-5 md:py-10 xl:py-20">
-				<Tabs defaultValue="bod" className="min-h-screen">
+				<BoardOfDirector />
+				{/* <Tabs defaultValue="bod" className="min-h-screen">
 					<TabsList className="p-0">
 						<TabsTrigger value="bod" className="lg:w-[250px] mx-3">
 							Board of Directors
@@ -50,7 +51,7 @@ function Team() {
 					<TabsContent className="bg-TColor-400" value="management">
 						<Management />
 					</TabsContent>
-				</Tabs>
+				</Tabs> */}
 			</div>
 		</>
 	);

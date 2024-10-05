@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import AccountOpeningCard from './ui/Cards/AccountOpeningCard';
 import ATMCardUseCard from './ui/Cards/ATMCardUseCard';
@@ -6,6 +7,7 @@ import HomePageBannerCard from './ui/Cards/HomePageBannerCard';
 import InstantLoanCard from './ui/Cards/InstantLoanCard';
 import JoinUsCard from './ui/Cards/JoinUsCard';
 import Card from './ui/Card';
+import {motion} from 'framer-motion';
 
 export default function Home() {
 	return (
@@ -63,31 +65,93 @@ export default function Home() {
 			</div>
 
 			<div className="px-3 md:px-10 xl:px-28 py-5 md:py-10 bg-TColor-400">
-				<div className="lg:grid grid-cols-3 gap-10 py-10">
-					<div className="col-span-2 text-center lg:text-left">
-						<h2 className={'text-2xl lg:text-4xl'}>
-							Building the tracks of digital finance.
-						</h2>
-						<h4 className="mt-5 text-TColor-50/75 leading-7 my-7">
-							Retrust Microfinance Bank stands out for its
-							customer-centric approach, innovative solutions, and
-							commitment to creating positive social and economic
-							impacts. We believe in fostering trust, driving
-							growth, and empowering communities to achieve their
-							full potential.
-						</h4>
+				<motion.div
+					layout
+					initial={{opacity: 0}}
+					whileInView={{opacity: 1}}
+					transition={{
+						opacity: {ease: 'linear', duration: 1},
+						layout: {duration: 0.3},
+					}}
+					viewport={{once: false}}
+				>
+					<div className="lg:grid grid-cols-3 gap-10 py-10">
+						<div className="col-span-2 text-center lg:text-left">
+							<h2 className={'text-2xl lg:text-4xl'}>
+								Building the tracks of digital finance.
+							</h2>
+							<h4 className="mt-5 text-TColor-50/75 leading-7 my-7">
+								Retrust Microfinance Bank stands out for its
+								customer-centric approach, innovative solutions,
+								and commitment to creating positive social and
+								economic impacts. We believe in fostering trust,
+								driving growth, and empowering communities to
+								achieve their full potential.
+							</h4>
+						</div>
 					</div>
-				</div>
-				<AccountOpeningCard />
+				</motion.div>
+				<motion.div
+					layout
+					initial={{opacity: 0}}
+					whileInView={{opacity: 1}}
+					transition={{
+						opacity: {ease: 'linear', duration: 1},
+						layout: {duration: 0.3},
+					}}
+					viewport={{once: false}}
+				>
+					<AccountOpeningCard />
+				</motion.div>
+
 				<div className="my-10 lg:grid grid-cols-2 gap-x-20">
-					<BudgetCard />
-					<ATMCardUseCard />
+					<motion.div
+						layout
+						initial={{opacity: 0}}
+						whileInView={{opacity: 1}}
+						transition={{
+							opacity: {ease: 'linear', duration: 1},
+							layout: {duration: 1},
+						}}
+						viewport={{once: false}}
+					>
+						<BudgetCard />
+					</motion.div>
+					<motion.div
+						initial={{opacity: 0}}
+						whileInView={{opacity: 1}}
+						transition={{
+							opacity: {ease: 'linear', duration: 1},
+							layout: {duration: 1},
+						}}
+						viewport={{once: false}}
+					>
+						<ATMCardUseCard />
+					</motion.div>
 				</div>
-				<InstantLoanCard />
+				<motion.div
+					initial={{opacity: 0}}
+					whileInView={{opacity: 1}}
+					transition={{
+						opacity: {ease: 'linear'},
+						layout: {duration: 1},
+					}}
+					viewport={{once: false}}
+				>
+					<InstantLoanCard />
+				</motion.div>
 			</div>
-			<div>
+			<motion.div
+				initial={{opacity: 0}}
+				whileInView={{opacity: 1}}
+				transition={{
+					opacity: {ease: 'linear'},
+					layout: {duration: 1},
+				}}
+				viewport={{once: false}}
+			>
 				<JoinUsCard />
-			</div>
+			</motion.div>
 		</>
 	);
 }

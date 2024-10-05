@@ -7,6 +7,7 @@ import Card from '../ui/Card';
 import {PhotoImageCard} from '../ui/Cards/PhotoImageCard';
 import {filesProps} from '../lib/definitions';
 import {files} from '../lib/placeholder-data';
+import {motion} from 'framer-motion';
 
 const PhotoAboutCard = ({file}: {file: filesProps}) => {
 	return (
@@ -52,61 +53,96 @@ function About() {
 				</div>
 			</PageCard>
 			<div className="px-3 md:px-10 xl:px-28 py-5 md:py-10 xl:py-20">
-				<div className="lg:w-3/4 mx-auto">
-					<h4 className="text-center text-TColor-150">OUR MISSION</h4>
-					<h2 className=" text-lg lg:text-3xl text-center text-TColor-50 mt-3">
-						To empower individuals and MSMEs through accessible
-						financial services, fostering economic development and
-						improving livelihoods in a customer centric manner.
-					</h2>
-				</div>
-				<div className="my-10 lg:my-20">
-					<Card className="relative -z-10 w-full min-h-[200px] lg:min-h-0">
-						<div className="flex justify-between items-center">
-							<div className="hidden md:block">
-								<Image
-									src={'/images/semilogo.svg'}
-									width={150}
-									height={100}
-									alt="not found"
-								/>
-							</div>
-							<div className="hidden md:block">
-								<Image
-									src={'/images/semilogo.svg'}
-									width={150}
-									height={100}
-									alt="not found"
-								/>
-							</div>
-						</div>
-
-						<Card className="absolute inset-0 -z-10 bg-TColor-150 text-TColor-400 flex items-center">
-							<div className="px-3 lg:px-0 text-center lg:text-left lg:w-3/4 mx-auto lg:grid lg:grid-cols-3">
-								<h1 className="text-center text-3xl mb-5 lg:mb-0">
-									Our Vision
-								</h1>
-								<p className="col-span-2 font-bold">
-									To be a leading microfinance bank in
-									Nigeria, leveraging technology in driving
-									inclusive economic growth and financial
-									inclusion
-								</p>
-							</div>
-						</Card>
-					</Card>
-				</div>
-				<div>
-					<h4 className="text-center text-TColor-150">OUR VALUES</h4>
-					<h1 className="text-center text-TColor-50 text-3xl my-3">
-						Our core values speak in volume
-					</h1>
-					<div className="lg:grid lg:grid-cols-2 gap-x-10">
-						{files.map((e, i) => (
-							<PhotoAboutCard file={e} key={i} />
-						))}
+				<motion.div
+					initial={{opacity: 0}}
+					whileInView={{opacity: 1}}
+					transition={{
+						opacity: {ease: 'linear'},
+						layout: {duration: 1},
+					}}
+					viewport={{once: false}}
+				>
+					<div className="lg:w-3/4 mx-auto">
+						<h4 className="text-center text-TColor-150">
+							OUR MISSION
+						</h4>
+						<h2 className=" text-lg lg:text-3xl text-center text-TColor-50 mt-3">
+							To empower individuals and MSMEs through accessible
+							financial services, fostering economic development
+							and improving livelihoods in a customer centric
+							manner.
+						</h2>
 					</div>
-				</div>
+				</motion.div>
+				<motion.div
+					initial={{opacity: 0}}
+					whileInView={{opacity: 1}}
+					transition={{
+						opacity: {ease: 'linear'},
+						layout: {duration: 1},
+					}}
+					viewport={{once: false}}
+				>
+					<div className="my-10 lg:my-20">
+						<Card className="relative -z-10 w-full min-h-[200px] lg:min-h-0">
+							<div className="flex justify-between items-center">
+								<div className="hidden md:block">
+									<Image
+										src={'/images/semilogo.svg'}
+										width={150}
+										height={100}
+										alt="not found"
+									/>
+								</div>
+								<div className="hidden md:block">
+									<Image
+										src={'/images/semilogo.svg'}
+										width={150}
+										height={100}
+										alt="not found"
+									/>
+								</div>
+							</div>
+
+							<Card className="absolute inset-0 -z-10 bg-TColor-150 text-TColor-400 flex items-center">
+								<div className="px-3 lg:px-0 text-center lg:text-left lg:w-3/4 mx-auto lg:grid lg:grid-cols-3">
+									<h1 className="text-center text-3xl mb-5 lg:mb-0">
+										Our Vision
+									</h1>
+									<p className="col-span-2 font-bold">
+										To be a leading microfinance bank in
+										Nigeria, leveraging technology in
+										driving inclusive economic growth and
+										financial inclusion
+									</p>
+								</div>
+							</Card>
+						</Card>
+					</div>
+				</motion.div>
+				<motion.div
+					initial={{opacity: 0}}
+					whileInView={{opacity: 1}}
+					transition={{
+						opacity: {ease: 'linear'},
+						layout: {duration: 1},
+					}}
+					viewport={{once: false}}
+				>
+					<div>
+						<h4 className="text-center text-TColor-150">
+							OUR VALUES
+						</h4>
+						<h1 className="text-center text-TColor-50 text-3xl my-3">
+							Our core values speak in volume
+						</h1>
+						<div className="lg:grid lg:grid-cols-2 gap-x-10">
+							{files.map((e, i) => (
+								<PhotoAboutCard file={e} key={i} />
+							))}
+						</div>
+					</div>
+				</motion.div>
 			</div>
 		</>
 	);

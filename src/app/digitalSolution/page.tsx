@@ -16,8 +16,8 @@ const PhotoCard = ({file}: {file: filesProps}) => {
 				imageStype={file?.imageStype}
 				file={file}
 			>
-				<div className="text-left pt-7">
-					<h3 className={`font-semibold text-TColor-50 text-xl`}>
+				<div className="text-left py-7">
+					<h3 className={`font-semibold text-TColor-50 text-xl px-5`}>
 						{file.name || ''}
 					</h3>
 					<ul className="my-5 px-7">

@@ -37,6 +37,14 @@ h6 {
 	font-family: 'Gilroy-SemiBold';
 }
 
+.carousel-content {
+	scroll-snap-type: y mandatory;
+}
+
+.carousel-item {
+	scroll-snap-align: start;
+}
+
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;

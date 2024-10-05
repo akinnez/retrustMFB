@@ -19,7 +19,7 @@ function ATMCardUseCard() {
 						</h4>
 					</div>
 
-					<div className="lg:pt-[4.16rem]">
+					<div className="lg:pt-[1.4rem]">
 						<Image
 							src={'/images/card.svg'}
 							alt="image-not-found"
