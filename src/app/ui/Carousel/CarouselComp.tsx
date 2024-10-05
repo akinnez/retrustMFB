@@ -25,13 +25,13 @@ function CarouselComp({NodeArray}: {NodeArray: React.ReactNode[]}) {
 				<CarouselContent className="space-y-10" ref={scrollRef}>
 					{NodeArray.map((_, index) => (
 						<motion.div
+							key={index}
 							initial={{opacity: 0}}
 							whileInView={{opacity: 1}}
 							viewport={{root: scrollRef, once: false}}
 							style={{y}}
 						>
 							<CarouselItem
-								key={index}
 								className={index == 0 ? 'active' : ''}
 							>
 								<div className="p-1">
