@@ -7,11 +7,8 @@ import {
 function CarouselComp({NodeArray}: {NodeArray: React.ReactNode[]}) {
 	return (
 		<>
-			<Carousel
-				className={`w-full snap-center origin-center`}
-				orientation={'vertical'}
-			>
-				<CarouselContent className="space-y-10 snap-center origin-center max-h-fit">
+			<Carousel className={`w-full`} orientation={'vertical'}>
+				<CarouselContent className="space-y-10 max-h-fit">
 					{NodeArray.map((_, index) => {
 						return (
 							<CarouselItem key={index}>
