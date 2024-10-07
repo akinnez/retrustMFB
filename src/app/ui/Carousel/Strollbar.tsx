@@ -15,6 +15,7 @@ function Strollbar({
 
 	// const {scrollNext, scrollPrev} = useCarousel();
 
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	function handleScroll(e: any) {
 		const activeIndex = Math.round(e.target.scrollTop / scrollHeight);
 		setIndex(activeIndex);
