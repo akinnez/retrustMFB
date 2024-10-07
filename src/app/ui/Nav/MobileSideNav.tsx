@@ -8,7 +8,13 @@ import {navListType} from './NavList';
 import Link from 'next/link';
 import {Button} from '@/components/ui/button';
 
-const MobileSideNav = ({navListComp}: {navListComp: navListType[]}) => {
+const MobileSideNav = ({
+	navListComp,
+	close,
+}: {
+	navListComp: navListType[];
+	close: any;
+}) => {
 	return (
 		<>
 			<div className="w-[270px] h-screen">
@@ -16,7 +22,9 @@ const MobileSideNav = ({navListComp}: {navListComp: navListType[]}) => {
 					{navListComp.map((e, i) => (
 						<AccordionItem value={e?.trigger} key={i}>
 							<AccordionTrigger>{e?.trigger}</AccordionTrigger>
-							<AccordionContent>{e?.children}</AccordionContent>
+							<AccordionContent onClick={() => close()}>
+								{e?.children}
+							</AccordionContent>
 						</AccordionItem>
 					))}
 				</Accordion>

@@ -47,7 +47,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="px-3 lg:px-0 w-full lg:w-2/5 my-10 lg:my-0">
-						<Card className="flex items-center gap-3 px-3 py-4  border border-TColor-50/50 shadow-none ">
+						<Card className="flex items-center gap-3 px-3 py-4  border border-TColor-50/50 ">
 							<Image
 								src={'/images/qrcode.svg'}
 								alt="not-found"

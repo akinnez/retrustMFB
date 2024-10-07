@@ -9,14 +9,7 @@ type CardProps = {
 function Card({children, className}: CardProps) {
 	return (
 		<>
-			<div
-				className={clsx(
-					'rounded-3xl shadow-sm shadow-TColor-50',
-					className
-				)}
-			>
-				{children}
-			</div>
+			<div className={clsx('rounded-3xl', className)}>{children}</div>
 		</>
 	);
 }

@@ -11,7 +11,7 @@ export const Avatar = ({
 		<>
 			<div
 				className={clsx(
-					'rounded-full h-10 w-10 shadow-sm flex justify-center items-center',
+					'rounded-full h-10 w-10 flex justify-center items-center',
 					className
 				)}
 			>

@@ -1,35 +1,25 @@
 'use client';
+import CarouselComponent from './Carousel';
 import CarouselComp from './CarouselComp';
-import ItemsList from './CarouselItems';
+import CarouselItems from './CarouselItems';
 import {loanList} from '@/app/lib/placeholder-data';
 
+const NodeArray = [
+	<CarouselItems formList={loanList[0]} />,
+	<CarouselItems formList={loanList[1]} />,
+	<CarouselItems formList={loanList[2]} />,
+	<CarouselItems formList={loanList[3]} />,
+	<CarouselItems formList={loanList[4]} />,
+];
 function LoanCarousel() {
 	return (
 		<>
-			<CarouselComp
-				NodeArray={[
-					<ItemsList
-						key={loanList[0].label}
-						formList={loanList[0]}
-					/>,
-					<ItemsList
-						key={loanList[1].label}
-						formList={loanList[1]}
-					/>,
-					<ItemsList
-						key={loanList[2].label}
-						formList={loanList[2]}
-					/>,
-					<ItemsList
-						key={loanList[3].label}
-						formList={loanList[3]}
-					/>,
-					<ItemsList
-						key={loanList[4].label}
-						formList={loanList[4]}
-					/>,
-				]}
-			/>
+			<div className="hidden lg:block">
+				<CarouselComponent NodeArray={NodeArray} />
+			</div>
+			<div className=" lg:hidden">
+				<CarouselComp NodeArray={NodeArray} />
+			</div>
 		</>
 	);
 }

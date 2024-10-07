@@ -32,7 +32,7 @@ function Navbar() {
 	}
 	return (
 		<>
-			<header className="sticky top-0 z-50 w-full flex px-3 md:px-10 xl:px-28 lg:justify-between lg:items-center  shadow-sm  bg-TColor-400 py-5">
+			<header className="sticky top-0 z-50 w-full flex px-3 md:px-10 xl:px-28 lg:justify-between lg:items-center bg-TColor-400 py-5">
 				<Link href={'/'} className="w-full lg:w-auto cursor-pointer">
 					<Image
 						src={'/images/logo.svg'}
@@ -49,7 +49,7 @@ function Navbar() {
 					className={`fixed lg:static top-0 z-50 flex-col min-w-[320px] lg:w-full h-screen lg:h-full justify-start flex lg:flex-row lg:justify-center items-center ${
 						isOpen
 							? 'left-0 bg-TColor-400 transition-all duration-500 ease-linear lg:bg-TColor-400 pt-40  lg:py-0 overflow-y-auto lg:overflow-hidden '
-							: '-left-[100%] lg:left-0'
+							: '-left-[100%] lg:left-0 transition-all duration-1000 ease-linear '
 					}`}
 				>
 					<div className="gap-x-5 items-center hidden lg:flex">
@@ -79,7 +79,10 @@ function Navbar() {
 							/>
 						</div>
 
-						<MobileSideNav navListComp={navListComp} />
+						<MobileSideNav
+							close={close}
+							navListComp={navListComp}
+						/>
 					</div>
 				</nav>
 

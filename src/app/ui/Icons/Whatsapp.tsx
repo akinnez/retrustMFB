@@ -9,7 +9,7 @@ function Whatsapp({styles}: {styles: string}) {
 				xmlns="http://www.w3.org/2000/svg"
 				className={`${styles}`}
 			>
-				<g clip-path="url(#clip0_2714_5707)">
+				<g clipPath="url(#clip0_2714_5707)">
 					<path
 						d="M0.886246 9.39164C0.885824 10.9154 1.28397 12.4033 2.04105 13.7147L0.813843 18.1954L5.3993 16.9931C6.66759 17.6835 8.0886 18.0453 9.53263 18.0454H9.53643C14.3035 18.0454 18.1839 14.1663 18.186 9.39846C18.1869 7.08809 17.288 4.91556 15.6547 3.28107C14.0218 1.64672 11.85 0.746172 9.53607 0.745117C4.76848 0.745117 0.888285 4.62398 0.886317 9.39164"
 						fill="url(#paint0_linear_2714_5707)"
@@ -32,8 +32,8 @@ function Whatsapp({styles}: {styles: string}) {
 						y2="0.745117"
 						gradientUnits="userSpaceOnUse"
 					>
-						<stop stop-color="#1FAF38" />
-						<stop offset="1" stop-color="#60D669" />
+						<stop stopColor="#1FAF38" />
+						<stop offset="1" stopColor="#60D669" />
 					</linearGradient>
 					<linearGradient
 						id="paint1_linear_2714_5707"
@@ -43,8 +43,8 @@ function Whatsapp({styles}: {styles: string}) {
 						y2="0.432129"
 						gradientUnits="userSpaceOnUse"
 					>
-						<stop stop-color="#F9F9F9" />
-						<stop offset="1" stop-color="white" />
+						<stop stopColor="#F9F9F9" />
+						<stop offset="1" stopColor="white" />
 					</linearGradient>
 					<clipPath id="clip0_2714_5707">
 						<rect

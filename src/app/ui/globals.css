@@ -24,6 +24,8 @@
 body {
 	font-family: 'Gilroy-Medium', Arial, Helvetica, sans-serif;
 	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	scroll-snap-type: y mandatory;
 }
 
 h1,
@@ -43,6 +45,21 @@ h6 {
 
 .carousel-item {
 	scroll-snap-align: start;
+}
+
+::-webkit-scrollbar {
+	height: 5px;
+	width: 5px;
+	background: #ffe3e1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #e20f00;
+	-webkit-border-radius: 1rem;
+}
+
+::-webkit-scrollbar-corner {
+	background: #ffe3e1;
 }
 
 @layer utilities {

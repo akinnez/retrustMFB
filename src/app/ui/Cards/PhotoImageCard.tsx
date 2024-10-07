@@ -19,12 +19,7 @@ export const PhotoImageCard = ({
 }) => {
 	return (
 		<>
-			<Card
-				className={clsx(
-					'text-center mx-auto my-5 shadow-none',
-					className
-				)}
-			>
+			<Card className={clsx('text-center mx-auto my-5', className)}>
 				<motion.div
 					initial={{opacity: 0}}
 					whileInView={{opacity: 1}}
