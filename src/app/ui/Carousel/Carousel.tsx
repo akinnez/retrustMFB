@@ -14,10 +14,10 @@ function CarouselComponent({NodeArray}: {NodeArray: React.ReactNode[]}) {
 		<>
 			<div className="flex space-x-4">
 				<Carousel
-					className={`w-full snap-center origin-center`}
+					className={`w-full snap-mandatory snap-y origin-center`}
 					orientation="vertical"
 				>
-					<CarouselContent className="space-y-10 snap-center max-h-fit">
+					<CarouselContent className="space-y-10 snap-start max-h-fit">
 						<CarouselItem className="w-full block">
 							<div className="p-1">{NodeArray[activeIndex]}</div>
 						</CarouselItem>

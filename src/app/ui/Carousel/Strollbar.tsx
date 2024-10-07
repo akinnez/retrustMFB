@@ -1,7 +1,7 @@
 import {cn} from '@/lib/utils';
 
 function Strollbar({
-	NodeArray,
+	NodeArray = [],
 	className,
 	setIndex,
 }: {
@@ -11,13 +11,14 @@ function Strollbar({
 }) {
 	const scrollHeight = 400;
 	const arrayLength = NodeArray?.length || 1;
-	const lastScrollTop = `h-[${arrayLength * scrollHeight}px]`;
+	const totalHeight = arrayLength * scrollHeight;
 
 	// const {scrollNext, scrollPrev} = useCarousel();
 
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	function handleScroll(e: any) {
-		const activeIndex = Math.round(e.target.scrollTop / scrollHeight);
+	function handleScroll(e: React.UIEvent<HTMLDivElement>) {
+		const activeIndex = Math.round(
+			e.currentTarget.scrollTop / scrollHeight
+		);
 		setIndex(activeIndex);
 	}
 
@@ -30,7 +31,7 @@ function Strollbar({
 			)}
 		>
 			{/* Invisible scrollbar content to create height */}
-			<div className={lastScrollTop}></div>
+			<div style={{height: `${totalHeight}px`}}></div>
 		</div>
 	);
 }

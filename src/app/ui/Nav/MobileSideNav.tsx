@@ -13,8 +13,7 @@ const MobileSideNav = ({
 	close,
 }: {
 	navListComp: navListType[];
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	close: any;
+	close: () => void;
 }) => {
 	return (
 		<>
