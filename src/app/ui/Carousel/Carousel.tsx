@@ -1,33 +1,50 @@
-import {useState} from 'react';
+'use client';
 
-import {
-	Carousel,
-	CarouselContent,
-	CarouselItem,
-} from '@/components/ui/carousel';
-import Strollbar from './Strollbar';
-
-function CarouselComponent({NodeArray}: {NodeArray: React.ReactNode[]}) {
-	const [activeIndex, setActiveIndex] = useState(0);
-
+const stickyPostiton = 380;
+function CarouselComponent({
+	NodeArray,
+	index,
+	position,
+	local,
+}: {
+	NodeArray: React.ReactNode[];
+	index?: number;
+	position?: boolean;
+	local?: string;
+}) {
 	return (
 		<>
-			<div className="flex space-x-4">
-				<Carousel
-					className={`w-full snap-mandatory snap-y origin-center`}
-					orientation="vertical"
-				>
-					<CarouselContent className="space-y-10 snap-start max-h-fit">
-						<CarouselItem className="w-full block">
-							<div className="p-1">{NodeArray[activeIndex]}</div>
-						</CarouselItem>
-					</CarouselContent>
-					<Strollbar
-						setIndex={setActiveIndex}
-						NodeArray={NodeArray}
-					/>
-				</Carousel>
+			<div
+				className={`flex flex-col w-full ${
+					position && 'fixed w-full pr-10 top-[150px]'
+				}`}
+			>
+				<div className={`w-full`}>
+					<div className="space-y-10">
+						<div className="w-full block">
+							<div className="p-1">{NodeArray[index ?? 0]}</div>
+						</div>
+					</div>
+				</div>
 			</div>
+			{local == 'loan' && (
+				<div
+					className={`absloute inset-0]`}
+					style={{
+						height: `${
+							stickyPostiton * NodeArray.length + stickyPostiton
+						}px`,
+					}}
+				></div>
+			)}
+			{local == 'savings' && (
+				<div
+					className={`absloute inset-0]`}
+					style={{
+						height: `${stickyPostiton * NodeArray.length - 1}px`,
+					}}
+				></div>
+			)}
 		</>
 	);
 }

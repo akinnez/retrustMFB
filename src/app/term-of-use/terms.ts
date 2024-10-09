@@ -1,4 +1,4 @@
-import {ListProps} from '../lib/definitions';
+import {ListProps} from '@/app/lib/definitions';
 
 export const serviceList: ListProps[] = [
 	{

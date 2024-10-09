@@ -6,8 +6,10 @@ import FooterTop from './FooterTop';
 function Footer() {
 	return (
 		<>
-			<FooterTop />
-			<FooterList />
+			<div className="block w-full relative z-10">
+				<FooterTop />
+				<FooterList />
+			</div>
 		</>
 	);
 }

@@ -1,6 +1,6 @@
 import clsx from 'clsx';
-import Card from '../Card';
-import {filesProps} from '../../lib/definitions';
+import Card from '@/app/ui/Card';
+import {filesProps} from '@/app/lib/definitions';
 import Image from 'next/image';
 import {motion} from 'framer-motion';
 

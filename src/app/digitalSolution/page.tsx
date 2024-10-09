@@ -1,10 +1,10 @@
 'use client';
 
-import {filesProps, ListProps} from '../lib/definitions';
-import {digitalFiles} from '../lib/placeholder-data';
-import PageCard from '../ui/Cards/PageCard';
-import {ListComp} from '../ui/ListComp';
-import {PhotoImageCard} from '../ui/Cards/PhotoImageCard';
+import {filesProps, ListProps} from '@/app/lib/definitions';
+import {digitalFiles} from '@/app/lib/placeholder-data';
+import PageCard from '@/app/ui/Cards/PageCard';
+import {ListComp} from '@/app/ui/ListComp';
+import {PhotoImageCard} from '@/app/ui/Cards/PhotoImageCard';
 
 const PhotoCard = ({file}: {file: filesProps}) => {
 	const arrayList: ListProps[] = file?.position as ListProps[];

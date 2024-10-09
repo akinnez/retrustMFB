@@ -2,11 +2,11 @@
 
 import Image from 'next/image';
 
-import PageCard from '../ui/Cards/PageCard';
-import Card from '../ui/Card';
-import {PhotoImageCard} from '../ui/Cards/PhotoImageCard';
-import {filesProps} from '../lib/definitions';
-import {files} from '../lib/placeholder-data';
+import PageCard from '@/app/ui/Cards/PageCard';
+import Card from '@/app/ui/Card';
+import {PhotoImageCard} from '@/app/ui/Cards/PhotoImageCard';
+import {filesProps} from '@/app/lib/definitions';
+import {files} from '@/app/lib/placeholder-data';
 import {motion} from 'framer-motion';
 
 const PhotoAboutCard = ({file}: {file: filesProps}) => {

@@ -2,7 +2,7 @@
 
 import {ItemProps, ListProps} from '@/app/lib/definitions';
 import Image from 'next/image';
-import {ListComp} from '../ListComp';
+import {ListComp} from '@/app/ui/ListComp';
 import clsx from 'clsx';
 
 function ItemsList({

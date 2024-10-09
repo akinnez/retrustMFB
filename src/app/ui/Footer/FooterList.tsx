@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function FooterList() {
 	return (
-		<div className="min-h-[calc(100vh-10rem)]">
+		<div className="min-h-[calc(70vh-10rem)] bg-TColor-400">
 			<div className="flex justify-center items-center">
 				<div className="w-11/12 sm:w-4/5 md:w-3/4 lg:w-4/5 min-h-[50vh] lg:grid grid-cols-3 gap-5 lg:items-center">
 					<div className="col-span-1 my-20 lg:my-0 text-center lg:text-left">

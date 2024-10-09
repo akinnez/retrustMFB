@@ -1,7 +1,7 @@
 'use client';
 
-import PageCard from '../ui/Cards/PageCard';
-import {ListComp} from '../ui/ListComp';
+import PageCard from '@/app/ui/Cards/PageCard';
+import {ListComp} from '@/app/ui/ListComp';
 
 import {
 	digitalPlatformList,
@@ -9,7 +9,7 @@ import {
 	serviceList,
 	contactList,
 	accountSuspension,
-} from './terms';
+} from '@/app/term-of-use/terms';
 
 function TermsOfUsePage() {
 	return (

@@ -1,8 +1,8 @@
 'use client';
 
 import {ItemProps} from '@/app/lib/definitions';
-import Card from '../Card';
-import ItemsList from '../Carousel/CarouselItems';
+import Card from '@/app/ui/Card';
+import ItemsList from '@/app/ui/Carousel/CarouselItems';
 import Link from 'next/link';
 import {ChevronRight} from 'lucide-react';
 

@@ -20,6 +20,16 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('../../../public/fonts/Gilroy-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	transition: all 1s linear;
+}
 
 body {
 	font-family: 'Gilroy-Medium', Arial, Helvetica, sans-serif;
@@ -28,11 +38,14 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
 	font-family: 'Gilroy-ExtraBold';
 }
+
 h4,
+h3 {
+	font-family: 'Gilroy-Bold';
+}
 h5,
 h6 {
 	font-family: 'Gilroy-SemiBold';
@@ -52,6 +65,10 @@ h6 {
 ::-webkit-scrollbar-corner {
 	background: #ffe3e1;
 }
+
+/* main {
+	flex: 1;
+} */
 
 @layer utilities {
 	.text-balance {

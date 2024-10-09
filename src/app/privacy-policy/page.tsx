@@ -1,14 +1,14 @@
 'use client';
 
-import PageCard from '../ui/Cards/PageCard';
-import {ListComp} from '../ui/ListComp';
+import PageCard from '@/app/ui/Cards/PageCard';
+import {ListComp} from '@/app/ui/ListComp';
 import {
 	contactList,
 	firstList,
 	list4,
 	secondList,
 	thirdList,
-} from './privacyDocs';
+} from '@/app/privacy-policy/privacyDocs';
 
 function PrivacyPage() {
 	return (

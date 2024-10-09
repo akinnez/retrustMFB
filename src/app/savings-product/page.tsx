@@ -1,7 +1,7 @@
 'use client';
 
-import PageCard from '../ui/Cards/PageCard';
-import Carousel from '../ui/Carousel/Index';
+import PageCard from '@/app/ui/Cards/PageCard';
+import Carousel from '@/app/ui/Carousel/Index';
 
 function SavingsProduct() {
 	return (

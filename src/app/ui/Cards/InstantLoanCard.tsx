@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Card from '../Card';
-import ItemsList from '../Carousel/CarouselItems';
+import Card from '@/app/ui/Card';
+import ItemsList from '@/app/ui/Carousel/CarouselItems';
 import {ChevronRight} from 'lucide-react';
 import {ItemProps} from '@/app/lib/definitions';
 

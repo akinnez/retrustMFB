@@ -1,3 +1,4 @@
+'use client';
 import {
 	Carousel,
 	CarouselContent,
@@ -8,7 +9,7 @@ function CarouselComp({NodeArray}: {NodeArray: React.ReactNode[]}) {
 	return (
 		<>
 			<Carousel className={`w-full`} orientation={'vertical'}>
-				<CarouselContent className="space-y-10 max-h-fit">
+				<CarouselContent className="space-y-10">
 					{NodeArray.map((_, index) => {
 						return (
 							<CarouselItem key={index}>

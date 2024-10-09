@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Card from '../Card';
+import Card from '@/app/ui/Card';
 import Link from 'next/link';
 
 function HomePageBannerCard() {
@@ -11,7 +11,7 @@ function HomePageBannerCard() {
 				<div className="lg:relative w-full min-h-[calc(90vh-5rem)]">
 					<div className="flex justify-center items-center lg:min-h-[calc(90vh-5rem)]">
 						<div className="px-3 sm:px-0 sm:w-4/5 lg:w-1/2 text-center relative z-10">
-							<h1 className="text-3xl sm:text-5xl w-full">
+							<h1 className="text-4xl sm:text-5xl lg:text-6xl  w-full">
 								Building a{' '}
 								<span className="text-TColor-150">
 									Brighter{' '}

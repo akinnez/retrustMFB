@@ -37,11 +37,8 @@ function Navbar() {
 					<Image
 						src={'/images/logo.svg'}
 						width={150}
-						layout="fixed"
-						objectFit="contain"
 						height={150}
 						alt={'logo'}
-						className="border"
 					/>
 				</Link>
 

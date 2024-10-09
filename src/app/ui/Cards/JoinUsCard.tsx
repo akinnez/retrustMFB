@@ -1,7 +1,7 @@
 'use client';
 
 import {ItemProps} from '@/app/lib/definitions';
-import ItemsList from '../Carousel/CarouselItems';
+import ItemsList from '@/app/ui/Carousel/CarouselItems';
 
 const docs: ItemProps = {
 	label: 'Join Us on Our Journey',
