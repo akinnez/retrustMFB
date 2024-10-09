@@ -34,13 +34,13 @@ function About() {
 			<PageCard className="min-h-[calc(100vh-5rem)] lg:min-h-[calc(100vh+15rem)]">
 				<div className="px-3 lg:px-0 lg:w-3/4 text-center">
 					<h1 className="text-3xl sm:text-5xl w-full">Who we are</h1>
-					<h4 className="mt-5 text-TColor-50/80 lg:text-lg">
+					<h5 className="mt-5 text-TColor-50/80 lg:text-lg">
 						We are a Microfinance Bank established with the mission
 						to serve economically active Nigerians through a
 						customer-focused approach, utilizing technology in a
 						sustainable way while adhering to industry best
 						practices.
-					</h4>
+					</h5>
 
 					<div className="my-10">
 						<Image

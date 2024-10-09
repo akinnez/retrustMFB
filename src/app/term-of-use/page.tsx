@@ -20,9 +20,9 @@ function TermsOfUsePage() {
 						<h1 className="text-3xl sm:text-5xl w-full">
 							Retrust Microfinance Bank Limited Terms of Use
 						</h1>
-						<h4 className="mt-5 text-TColor-150 lg:text-lg">
+						<h5 className="mt-5 text-TColor-150 lg:text-lg">
 							Effective Date: 1st September 2024
-						</h4>
+						</h5>
 					</div>
 				</PageCard>
 			</>

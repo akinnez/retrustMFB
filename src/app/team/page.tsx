@@ -20,12 +20,12 @@ function Team() {
 						Our Leadership{' '}
 						<span className="text-TColor-150">Team</span>
 					</h1>
-					<h4 className="mt-5 text-TColor-50/75 lg:text-lg">
+					<h5 className="mt-5 text-TColor-50/75 lg:text-lg">
 						We are here for your every need – your dreams, goals,
 						and whatever you need. Our products are designed to
 						simplify your daily life so you can save, spend and
 						borrow with ease.
-					</h4>
+					</h5>
 				</div>
 			</PageCard>
 

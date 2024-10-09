@@ -80,14 +80,14 @@ export default function Home() {
 							<h2 className={'text-2xl lg:text-4xl'}>
 								Building the tracks of digital finance.
 							</h2>
-							<h4 className="mt-5 text-TColor-50/75 leading-7 my-7">
+							<h5 className="mt-5 text-TColor-50/75 leading-7 my-7">
 								Retrust Microfinance Bank stands out for its
 								customer-centric approach, innovative solutions,
 								and commitment to creating positive social and
 								economic impacts. We believe in fostering trust,
 								driving growth, and empowering communities to
 								achieve their full potential.
-							</h4>
+							</h5>
 						</div>
 					</div>
 				</motion.div>
