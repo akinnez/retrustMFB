@@ -18,8 +18,8 @@ function Carousel() {
 	const [index, setIndex] = useState(0);
 	const [stroll, setStroll] = useState(0);
 
-	function handleStrollBelow(e: Event) {
-		const scrollY = (e.target as Window).scrollY;
+	function handleStrollBelow() {
+		const scrollY = window.scrollY;
 		const activeIndex = Math.floor(scrollY / (stickyPostiton + 150));
 		setIndex(activeIndex);
 		setStroll(scrollY);
