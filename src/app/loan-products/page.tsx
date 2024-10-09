@@ -42,9 +42,8 @@ function LoanPage() {
 	const [index, setIndex] = useState(0);
 	const [stroll, setStroll] = useState(0);
 
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	function handleStrollBelow(e: any) {
-		const scrollY: any = e.target.defaultView.scrollY;
+	function handleStrollBelow(e: Event) {
+		const scrollY = (e.target as Window).scrollY;
 		const activeIndex = Math.floor(scrollY / (stickyPostiton + 150));
 		setIndex(activeIndex);
 		setStroll(scrollY);
