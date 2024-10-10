@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import {footerList} from './FooterDocs';
-import {FooterListComp} from './FooterListComp';
+import {footerList} from '@/app/ui/Footer/FooterDocs';
+import {FooterListComp} from '@/app/ui/Footer/FooterListComp';
 import Link from 'next/link';
 
 function FooterList() {

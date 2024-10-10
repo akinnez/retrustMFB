@@ -1,12 +1,13 @@
 'use client';
+
 import Image from 'next/image';
-import AccountOpeningCard from './ui/Cards/AccountOpeningCard';
-import ATMCardUseCard from './ui/Cards/ATMCardUseCard';
-import BudgetCard from './ui/Cards/BudgetCard';
-import HomePageBannerCard from './ui/Cards/HomePageBannerCard';
-import InstantLoanCard from './ui/Cards/InstantLoanCard';
-import JoinUsCard from './ui/Cards/JoinUsCard';
-import Card from './ui/Card';
+import AccountOpeningCard from '@/app/ui/Cards/AccountOpeningCard';
+import ATMCardUseCard from '@/app/ui/Cards/ATMCardUseCard';
+import BudgetCard from '@/app/ui/Cards/BudgetCard';
+import HomePageBannerCard from '@/app/ui/Cards/HomePageBannerCard';
+import InstantLoanCard from '@/app/ui/Cards/InstantLoanCard';
+import JoinUsCard from '@/app/ui/Cards/JoinUsCard';
+import Card from '@/app/ui/Card';
 import {motion} from 'framer-motion';
 
 export default function Home() {

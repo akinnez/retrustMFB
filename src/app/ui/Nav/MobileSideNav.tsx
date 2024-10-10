@@ -4,7 +4,7 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from '@/components/ui/accordion';
-import {navListType} from './NavList';
+import {navListType} from '@/app/ui/Nav/NavList';
 import Link from 'next/link';
 import {Button} from '@/components/ui/button';
 

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Card from '../Card';
+import Card from '@/app/ui/Card';
 import Link from 'next/link';
 
 function FooterTop() {

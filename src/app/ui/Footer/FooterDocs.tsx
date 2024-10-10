@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import {Avatar} from '../Avatar';
-import TwitterX from '../Icons/TwitterX';
-import Whatsapp from '../Icons/Whatsapp';
+import {Avatar} from '@/app/ui/Avatar';
+import TwitterX from '@/app/ui/Icons/TwitterX';
+import Whatsapp from '@/app/ui/Icons/Whatsapp';
 
-import Youtube from '../Icons/Youtube';
+import Youtube from '@/app/ui/Icons/Youtube';
 import Image from 'next/image';
 
 export const social: React.ReactNode[] = [

@@ -1,12 +1,12 @@
 import {Users} from 'lucide-react';
-import {Avatar} from '../Avatar';
-import {ListItemProps} from './Navbar';
-import {navListType} from './NavList';
-import ListItem from './ListItem';
-import UserBold from '../Icons/UserBold';
-import WritingPad from '../Icons/WritingPad';
-import SubTitle from '../Icons/Subtitle';
-import DocumentBox from '../Icons/DocumentBox';
+import {Avatar} from '@/app/ui/Avatar';
+import {ListItemProps} from '@/app/ui/Nav/Navbar';
+import {navListType} from '@/app/ui/Nav/NavList';
+import ListItem from '@/app/ui/Nav/ListItem';
+import UserBold from '@/app/ui/Icons/UserBold';
+import WritingPad from '@/app/ui/Icons/WritingPad';
+import SubTitle from '@/app/ui/Icons/Subtitle';
+import DocumentBox from '@/app/ui/Icons/DocumentBox';
 
 export const aboutUs: ListItemProps[] = [
 	{

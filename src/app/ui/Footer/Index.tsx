@@ -1,7 +1,7 @@
 'use client';
 
-import FooterList from './FooterList';
-import FooterTop from './FooterTop';
+import FooterList from '@/app/ui/Footer/FooterList';
+import FooterTop from '@/app/ui/Footer/FooterTop';
 
 function Footer() {
 	return (

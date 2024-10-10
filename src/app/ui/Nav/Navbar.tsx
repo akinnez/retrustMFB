@@ -4,7 +4,7 @@ import {Button} from '@/components/ui/button';
 import {Menu, XCircle} from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import {navListComp} from './NavDocs';
+import {navListComp} from '@/app/ui/Nav/NavDocs';
 import dynamic from 'next/dynamic';
 
 const NavigationMenuDropdown = dynamic(() => import('@/app/ui/Nav/NavList'), {

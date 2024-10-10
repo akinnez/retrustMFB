@@ -1,7 +1,7 @@
 'use client';
 
 import {bodFiles} from '@/app/lib/placeholder-data';
-import {PhotoImageCard} from '../Cards/PhotoImageCard';
+import {PhotoImageCard} from '@/app/ui/Cards/PhotoImageCard';
 import {filesProps} from '@/app/lib/definitions';
 
 // Make a new component

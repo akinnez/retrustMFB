@@ -1,10 +1,10 @@
 'use client';
 import PageCard from '@/app/ui/Cards/PageCard';
 import {useEffect, useState} from 'react';
-import {loanList} from '../lib/placeholder-data';
-import ItemsList from '../ui/Carousel/CarouselItems';
-import CarouselComponent from '../ui/Carousel/Carousel';
-import CarouselComp from '../ui/Carousel/CarouselComp';
+import {loanList} from '@/app/lib/placeholder-data';
+import ItemsList from '@/app/ui/Carousel/CarouselItems';
+import CarouselComponent from '@/app/ui/Carousel/Carousel';
+import CarouselComp from '@/app/ui/Carousel/CarouselComp';
 
 const NodeArray = [
 	<ItemsList key={0} formList={loanList[0]} />,

@@ -1,8 +1,8 @@
 import type {Metadata} from 'next';
 import {Gilroy_Medium, Gilroy_ExtraBold} from '@/app/ui/fonts';
 import '@/app/ui/globals.css';
-import Navbar from './ui/Nav/Navbar';
-import Footer from './ui/Footer/Index';
+import Navbar from '@/app/ui/Nav/Navbar';
+import Footer from '@/app/ui/Footer/Index';
 
 export const metadata: Metadata = {
 	title: 'Retrust MFB Official Website',
@@ -20,7 +20,7 @@ export default function RootLayout({
 				className={`${Gilroy_Medium.variable} ${Gilroy_ExtraBold.variable} antialiased`}
 			>
 				<Navbar />
-				<main className="">{children}</main>
+				<main>{children}</main>
 				<Footer />
 			</body>
 		</html>
