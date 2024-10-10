@@ -20,12 +20,12 @@ function JoinUsCard() {
 					formList={docs}
 				>
 					<div className="">
-						<h4 className="mt-5 text-TColor-50/75 leading-7">
+						<h5 className="mt-5 text-TColor-50/75 leading-7">
 							We invite you to be a part of our journey to
 							redefine microfinance banking in Nigeria. Together,
 							we can build a brighter financial future for
 							everyone.
-						</h4>
+						</h5>
 					</div>
 				</ItemsList>
 			</div>

@@ -22,13 +22,13 @@ function InstantLoanCard() {
 					formList={docs}
 				>
 					<div className="">
-						<h4 className="mt-5 text-TColor-50/75 leading-7">
+						<h5 className="mt-5 text-TColor-50/75 leading-7">
 							Need a loan? Retrust has you covered. Whether for
 							personal or business needs, we offer a range of loan
 							options to suit you. Apply anytime and receive funds
 							directly in your Retrust account-quick, easy, and
 							hassle-free.
-						</h4>
+						</h5>
 						<Link
 							className="flex gap-2 text-TColor-300 mt-5 font-bold justify-center lg:justify-normal"
 							href={'#'}

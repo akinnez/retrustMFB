@@ -24,14 +24,14 @@ function AccountOpeningCard() {
 					formList={docs}
 				>
 					<div className="">
-						<h4 className="mt-5 text-TColor-50/75 leading-7">
+						<h5 className="mt-5 text-TColor-50/75 leading-7">
 							We have designed our sign-up process to be
 							lightning-fast, ensuring you can start banking
 							without any delay. No lengthy paperwork or
 							complicated steps here. Just give us your basic
 							info, verify your identity, and you are done. It is
 							banking made simple.
-						</h4>
+						</h5>
 						<Link
 							className="flex gap-2 text-TColor-150 mt-5 font-bold justify-center lg:justify-normal"
 							href={'#'}

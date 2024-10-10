@@ -10,13 +10,13 @@ function BudgetCard() {
 						<h2 className={'text-2xl lg:text-3xl text-TColor-200'}>
 							Budget every expenses
 						</h2>
-						<h4 className="mt-5 text-TColor-50/75 leading-7 my-7">
+						<h5 className="mt-5 text-TColor-50/75 leading-7 my-7">
 							Your dreams are unique, and so is our approach. With
 							our flexible saving options and competitive interest
 							rates, we are here to help you turn aspirations into
 							achievements. Open an account with us and let us
 							make your dreams a reality, together.
-						</h4>
+						</h5>
 					</div>
 
 					<div className="px-10">

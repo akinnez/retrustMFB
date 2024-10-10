@@ -18,12 +18,12 @@ function HomePageBannerCard() {
 								</span>
 								Financial Future
 							</h1>
-							<h4 className="mt-5 text-TColor-50/75 sm:text-lg leading-7">
+							<h5 className="mt-5 text-TColor-50/75 sm:text-lg leading-7">
 								We are here for your every need – your dreams,
 								goals, and whatever you need. Our products are
 								designed to simplify your daily life so you can
 								save, spend and borrow with ease.
-							</h4>
+							</h5>
 							<div className="mt-10 flex justify-center gap-x-5">
 								<Link href={'#'}>
 									<Image
